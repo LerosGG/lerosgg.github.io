@@ -11,17 +11,24 @@ body {
   height: 50px;
   width: 50px;
   background-color: rgb(99, 104, 51);
+  animation-name: rotation;
+  animation-duration: 4s;
+}
+@keyframes rotation {
+  0%   {left:0px; top:0px;}
+  50%  {left:200px; top:200px; transform:rotate(3600deg)}
+  100% {eft:0px; top:0px;}
 }
 </style>
 <html>
 <body>
     <center>
 <h1>The 8 holy rules of Leros</h1>
+<br>
+<h3>1. Always have a goal in mind.</h3>
 <br>Keep yourself constantly occupied and do not let any shortcomings
 <br>be created in you while wandering without a goal. Keep multiple 
 <br>goals if you believe you might achieve your current one soon.
-<br>
-<h3>1. Always have a goal in mind.</h3>
 <br>
 <h3>2. Your actions shall not be affected by desires and emotions.</h3>
 <br>
@@ -40,5 +47,7 @@ body {
 <br>in the large picture. Most things do not matter with this view,
 <br>so worry not.
     </center>
+
+<div class="square"></div>
 </body>
 </html>
