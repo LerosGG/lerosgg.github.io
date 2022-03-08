@@ -25,15 +25,33 @@ body {
   100% {left:0px; top:0px;}
 }
 </style>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 <html>
 <body>
     <center>
 <h1>The 8 holy rules of Leros</h1>
 <br>
-<h3>1. Always have a goal in mind.</h3>
-<br>Keep yourself constantly occupied and do not let any shortcomings
-<br>be created in you while wandering without a goal. Keep multiple 
-<br>goals if you believe you might achieve your current one soon.
+<button type="button" class="collapsible"><h3>1. Always have a goal in mind.</h3></button>
+<div class="content">
+  <br>Keep yourself constantly occupied and do not let any shortcomings
+  <br>be created in you while wandering without a goal. Keep multiple 
+  <br>goals if you believe you might achieve your current one soon.
+</div>
 <br>
 <h3>2. Your actions shall not be affected by desires and emotions.</h3>
 <br>The only true being that can be considered you is your mind and
@@ -45,8 +63,10 @@ body {
 <br>To create this sufferring is the worst thing any single person
 <br>may do. Although sex for the sake of fulfilling your desire
 <br>often isn't done with the goal of creating new life, that act
-<br>still breaks the previous and is in many ways horrendous.
+<br>still breaks the previous rule and is in many ways horrendous.
 <br>
+</center>
+<center>
 <div class="square"></div>
 <h3>4. Do not grow attached to anyone or anything.</h3>
 <br>Humans easily grow attached to things, even ones not in their
